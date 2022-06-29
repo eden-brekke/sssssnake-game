@@ -36,3 +36,15 @@ def show_score(choice, color, font, size):
   score_surface = score_font.render('Current Score : ' + str(score) + ' Keep Going!', True , color)
   score_rectangle = score_surface.get_rect()
   game_window.blit(score_surface, score_rectangle)
+  
+  
+def game_over():
+  my_font = pygame.font.SysFont('times new roman', 50)
+  game_over_surface = my_font.render("You scored : " + str(score) + 'Nice Job!', True , yellow)
+  game_over_rectangle = game_over_surface.get_rect()
+  game_over_rectangle.midtop = (window_x_axis/2, window_y_axis/4)
+  game_window.blit(game_over_surface, game_over_rectangle)
+  pygame.display.flip()
+  time.sleep(4)
+  pygame.quit()
+  quit()
