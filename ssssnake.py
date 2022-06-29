@@ -2,6 +2,8 @@ import pygame
 import time
 import random
 
+snake_speed = 15
+
 window_x_axis = 1000
 window_y_axis = 500
 
@@ -16,7 +18,7 @@ pygame.init()
 pygame.display.set_caption("Welcome to Eden's Sssssnake game")
 game_window = pygame.display.set_mode((window_x_axis, window_y_axis))
 
-fames_per_second_controller = pygame.time.Clock()
+frames_per_second_controller = pygame.time.Clock()
 
 snake_pos = [100, 50]
 
@@ -100,3 +102,11 @@ while True:
     game_over()
   if snake_pos[1] < 0 or snake_pos[1] > window_y_axis-10:
     game_over()
+
+  for block in snake_body[1:]:
+    if snake_pos[0] == block[0] and snake_pos[1] == block[1]:
+      game_over()
+  show_score(1, white, 'times new roman', 20)
+  pygame.display.update()
+  
+  frames_per_second_controller.tick(snake_speed)
