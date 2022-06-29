@@ -48,3 +48,15 @@ def game_over():
   time.sleep(4)
   pygame.quit()
   quit()
+  
+while True:
+  for event in pygame.event.get():
+    if event.type == pygame.KEYDOWN:
+      if event.key == pygame.K_UP:
+        change_direction = 'UP'
+      if event.key == pygame.K_DOWN:
+        change_direction = 'DOWN'
+      if event.key == pygame.K_LEFT:
+        change_direction = 'LEFT'
+      if event.key == pygame.K_RIGHT:
+        change_direction = 'RIGHT'
