@@ -60,3 +60,12 @@ while True:
         change_direction = 'LEFT'
       if event.key == pygame.K_RIGHT:
         change_direction = 'RIGHT'
+        
+  if change_direction == 'UP' and direction != 'DOWN':
+    direction == 'UP'
+  if change_direction == 'DOWN' and direction != 'UP':
+    direction == 'DOWN'
+  if change_direction == 'LEFT' and direction != 'RIGHT':
+    direction == 'LEFT'
+  if change_direction == 'RIGHT' and direction != 'LEFT':
+    direction == 'RIGHT'
