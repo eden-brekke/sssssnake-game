@@ -28,3 +28,5 @@ apple_spawn = True
 
 direction = 'RIGHT'
 change_direction = direction
+
+score = 0
