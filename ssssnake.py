@@ -69,3 +69,13 @@ while True:
     direction == 'LEFT'
   if change_direction == 'RIGHT' and direction != 'LEFT':
     direction == 'RIGHT'
+    
+  if direction == 'UP':
+    snake_pos[1] -= 10
+  if direction == 'DOWN':
+    snake_pos[1] += 10
+  if direction == 'LEFT':
+    snake_pos[0] -= 10
+  if direction == 'RIGHT':
+    snake_pos[0] += 10
+    
