@@ -17,3 +17,8 @@ pygame.display.set_caption("Welcome to Eden's Sssssnake game")
 game_window = pygame.display.set_mode((window_x_axis, window_y_axis))
 
 fames_per_second_controller = pygame.time.Clock()
+
+snake_pos = [100, 50]
+
+snake_body = [[100,50], [90, 50], [80, 50], [70, 50]]
+
