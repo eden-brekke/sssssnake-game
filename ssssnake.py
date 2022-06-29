@@ -12,3 +12,6 @@ white = pygame.Color(255, 255, 255)
 yellow = pygame.Color(255, 255, 0)
 
 pygame.init()
+
+pygame.display.set_caption("Welcome to Eden's Sssssnake game")
+game_window = pygame.display.set_mode((window_x_axis, window_y_axis))
