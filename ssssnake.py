@@ -79,3 +79,9 @@ while True:
   if direction == 'RIGHT':
     snake_pos[0] += 10
     
+  snake_body.insert(0, list(snake_pos))
+  if snake_pos[0] == apple_pos[0] and snake_pos[1] == apple_pos[1]:
+    score += 10
+    apple_spawn = False
+  else:
+    snake_body.pop()
