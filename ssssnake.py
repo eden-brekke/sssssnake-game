@@ -30,3 +30,9 @@ direction = 'RIGHT'
 change_direction = direction
 
 score = 0
+
+def show_score(choice, color, font, size):
+  score_font = pygame.font.SysFont(font, size)
+  score_surface = score_font.render('Current Score : ' + str(score) + ' Keep Going!', True , color)
+  score_rectangle = score_surface.get_rect()
+  game_window.blit(score_surface, score_rectangle)
