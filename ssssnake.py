@@ -96,4 +96,7 @@ while True:
   for pos in snake_body:
     pygame.draw.rect(game_window, hot_pink, pygame.Rect(pos[0], pos[1], 10, 10))
     
-  
+  if snake_pos[0] < 0 or snake_pos[0] > window_x_axis-10:
+    game_over()
+  if snake_pos[1] < 0 or snake_pos[1] > window_y_axis-10:
+    game_over()
