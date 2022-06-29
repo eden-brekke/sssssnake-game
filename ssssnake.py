@@ -22,3 +22,6 @@ snake_pos = [100, 50]
 
 snake_body = [[100,50], [90, 50], [80, 50], [70, 50]]
 
+apple_pos = [random.randrange(1, (window_x_axis//10))*10, random.randrange(1, (window_y_axis//10))*10]
+
+apple_spawn = True
