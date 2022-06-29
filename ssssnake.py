@@ -15,3 +15,5 @@ pygame.init()
 
 pygame.display.set_caption("Welcome to Eden's Sssssnake game")
 game_window = pygame.display.set_mode((window_x_axis, window_y_axis))
+
+fames_per_second_controller = pygame.time.Clock()
