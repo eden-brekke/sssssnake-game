@@ -85,3 +85,15 @@ while True:
     apple_spawn = False
   else:
     snake_body.pop()
+  
+  if not apple_spawn:
+    apple_pos = [random.randrange(1, (window_x_axis//10))*10, random.randrange(1, (window_y_axis//10))*10]
+  
+  apple_spawn = True
+  
+  game_window.fill(dark_blue)
+  
+  for pos in snake_body:
+    pygame.draw.rect(game_window, hot_pink, pygame.Rect(pos[0], pos[1], 10, 10))
+    
+  
