@@ -10,3 +10,5 @@ hot_pink = pygame.Color(255, 0, 102)
 apple_green = pygame.Color(0, 255, 0)
 white = pygame.Color(255, 255, 255)
 yellow = pygame.Color(255, 255, 0)
+
+pygame.init()
